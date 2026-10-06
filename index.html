@@ -1,0 +1,472 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style="width: 1280px; height: 3922px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Alex Rivera | Full-Stack Developer &amp; Software Engineer</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              black: '#09090b',
+              surface: '#111114',
+              card: '#16161a',
+              cardHover: '#1c1c22',
+              border: '#27272a',
+              subtle: '#3f3f46',
+              accent: '#38bdf8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-layout">
+    body {
+      background-color: #09090b;
+      color: #f4f4f5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      selection-background-color: #27272a;
+    }
+    
+    ::selection {
+      background: #38bdf8;
+      color: #09090b;
+    }
+
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+  </style>
+<style data-purpose="decorations">
+    .glow-effect {
+      background: radial-gradient(circle at 50% 30%, rgba(56, 189, 248, 0.07) 0%, rgba(9, 9, 11, 0) 70%);
+    }
+    .card-border-glow {
+      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.05);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-[#09090b] text-zinc-100 antialiased selection:bg-sky-500 selection:text-black" style="cursor: grabbing; user-select: none;">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 py-5 px-4 md:px-8 backdrop-blur-md bg-[#09090b]/80 border-b border-zinc-900/60 transition-all duration-300">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Brand Monogram -->
+<a aria-label="Alex Rivera Portfolio" class="flex items-center gap-2 group focus:outline-none" href="#hero">
+<div class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700/80 flex items-center justify-center font-mono text-sm font-bold tracking-tighter text-zinc-200 group-hover:border-zinc-400 group-hover:text-white transition-all shadow-inner">
+          ar
+        </div>
+</a>
+<!-- Floating Nav Menu (Pill Shape inspired by reference design) -->
+<nav class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#131316]/90 border border-zinc-800/80 shadow-2xl backdrop-blur-xl text-xs font-medium text-zinc-400">
+<a class="px-4 py-2 rounded-full text-zinc-200 hover:text-white hover:bg-zinc-800/60 transition-colors" href="#hero">Inicio</a>
+<a class="px-4 py-2 rounded-full hover:text-white hover:bg-zinc-800/60 transition-colors" href="#servicios">Servicios</a>
+<a class="px-4 py-2 rounded-full hover:text-white hover:bg-zinc-800/60 transition-colors" href="#sobre-mi">Sobre Mí</a>
+<a class="px-4 py-2 rounded-full hover:text-white hover:bg-zinc-800/60 transition-colors" href="#habilidades">Habilidades</a>
+<a class="px-4 py-2 rounded-full hover:text-white hover:bg-zinc-800/60 transition-colors" href="#proyectos">Proyectos</a>
+</nav>
+<!-- Right Action CTA -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-semibold text-zinc-200 bg-zinc-900 border border-zinc-700/70 hover:border-zinc-400 hover:text-white hover:bg-zinc-800 transition-all duration-200 shadow-sm" href="#contacto">
+          Let's Talk
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-36 pb-20 md:pt-48 md:pb-28 overflow-hidden glow-effect" id="hero">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Content: Introduction and Headline -->
+<div class="lg:col-span-7 flex flex-col items-start text-left z-10">
+<!-- Intro small label -->
+<div class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-xs font-medium text-zinc-400">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="">Disponible para nuevos desafíos</span>
+</div>
+<!-- Greeting Subheader -->
+<p class="text-zinc-400 font-medium text-sm md:text-base tracking-wide mb-3">
+            Hola, soy <span class="text-zinc-200 font-semibold">Alex Rivera</span>
+</p>
+<!-- Main Bold Heading -->
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-6">
+            Full-Stack Developer <br class="hidden sm:inline">
+<span class="text-zinc-400 font-semibold">&amp; Software Engineer</span>
+</h1>
+<!-- Value Proposition Statement -->
+<p class="text-zinc-400 text-base md:text-lg max-w-xl leading-relaxed mb-8">
+            Diseño e implemento arquitecturas de software escalables, microservicios resilientes y experiencias de usuario frontend de alto impacto visual y rendimiento impecable.
+          </p>
+<!-- Action Buttons & Socials -->
+<div class="flex flex-wrap items-center gap-4 mb-8">
+<a class="px-6 py-3 rounded-full text-xs font-semibold text-zinc-900 bg-zinc-100 hover:bg-white hover:shadow-lg transition-all duration-200" href="#contacto">
+              Descargar CV <i class="fa-solid fa-arrow-down ml-1.5"></i>
+</a>
+<a class="px-6 py-3 rounded-full text-xs font-semibold text-zinc-300 bg-zinc-900/90 border border-zinc-800 hover:border-zinc-600 hover:text-white transition-all duration-200" href="#proyectos">
+              Ver Proyectos
+            </a>
+</div>
+<!-- Social Badges Icon Bar -->
+<div class="flex items-center gap-4 text-zinc-400">
+<a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-white hover:border-zinc-600 transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-linkedin-in text-sm"></i>
+</a>
+<a aria-label="GitHub" class="w-9 h-9 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-white hover:border-zinc-600 transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github text-sm"></i>
+</a>
+<a aria-label="Twitter / X" class="w-9 h-9 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-white hover:border-zinc-600 transition-colors" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-x-twitter text-sm"></i>
+</a>
+<a aria-label="Email" class="w-9 h-9 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center hover:text-white hover:border-zinc-600 transition-colors" href="mailto:alex@rivera.dev">
+<i class="fa-solid fa-envelope text-sm"></i>
+</a>
+</div>
+</div>
+<!-- Right Visual: Developer Image with Monochromatic Aesthetic -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ServicesSection -->
+<section class="py-24 border-t border-zinc-900 bg-[#09090b] relative" id="servicios">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-3">Servicios</h2>
+<p class="text-sm md:text-base text-zinc-400">Soluciones integrales de software de punta a punta, diseñadas para escalar con elegancia y fiabilidad técnica.</p>
+</div>
+<!-- Services Grid (4 Cards aligned as per reference) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="flex flex-col justify-between bg-[#121215] border border-zinc-800/90 rounded-2xl p-6 hover:border-zinc-700 transition-all duration-300 card-border-glow group">
+<div>
+<div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 mb-5 group-hover:text-white transition-colors">
+<i class="fa-solid fa-code text-sm"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 leading-snug">Full-Stack Web Development</h3>
+<p class="text-xs text-zinc-400 leading-relaxed mb-6">
+              Desarrollo completo de aplicaciones modernas, fluidas y responsivas integrando ecosistemas React/Next.js con backends robustos y tipados.
+            </p>
+</div>
+<!-- Tags / Pills -->
+<div class="flex flex-col gap-2 pt-4 border-t border-zinc-800/50">
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">React &amp; Next.js</span>
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">Clean Architecture</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="flex flex-col justify-between bg-[#121215] border border-zinc-800/90 rounded-2xl p-6 hover:border-zinc-700 transition-all duration-300 card-border-glow group">
+<div>
+<div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 mb-5 group-hover:text-white transition-colors">
+<i class="fa-solid fa-server text-sm"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 leading-snug">Backend &amp; API Architecture</h3>
+<p class="text-xs text-zinc-400 leading-relaxed mb-6">
+              Creación de servicios escalables, endpoints RESTful y GraphQL de baja latencia, esquemas de bases de datos seguras y sistemas de caché eficientes.
+            </p>
+</div>
+<!-- Tags / Pills -->
+<div class="flex flex-col gap-2 pt-4 border-t border-zinc-800/50">
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">APIs REST &amp; GraphQL</span>
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">PostgreSQL &amp; Redis</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="flex flex-col justify-between bg-[#121215] border border-zinc-800/90 rounded-2xl p-6 hover:border-zinc-700 transition-all duration-300 card-border-glow group">
+<div>
+<div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 mb-5 group-hover:text-white transition-colors">
+<i class="fa-solid fa-bolt text-sm"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 leading-snug">Performance &amp; Scalability</h3>
+<p class="text-xs text-zinc-400 leading-relaxed mb-6">
+              Optimización de Core Web Vitals, tiempos de respuesta milimétricos, reducción de bundle-size y estricto cumplimiento de accesibilidad digital WCAG.
+            </p>
+</div>
+<!-- Tags / Pills -->
+<div class="flex flex-col gap-2 pt-4 border-t border-zinc-800/50">
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">Speed Optimization</span>
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">Web Performance</span>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="flex flex-col justify-between bg-[#121215] border border-zinc-800/90 rounded-2xl p-6 hover:border-zinc-700 transition-all duration-300 card-border-glow group">
+<div>
+<div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 mb-5 group-hover:text-white transition-colors">
+<i class="fa-solid fa-cloud text-sm"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 leading-snug">Cloud, DevOps &amp; CI/CD</h3>
+<p class="text-xs text-zinc-400 leading-relaxed mb-6">
+              Automatización de pipelines de integración y entrega continua con contenedores Docker, despliegue serverless y monitoreo activo en AWS y Vercel.
+            </p>
+</div>
+<!-- Tags / Pills -->
+<div class="flex flex-col gap-2 pt-4 border-t border-zinc-800/50">
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">Docker Containers</span>
+<span class="inline-block px-3 py-1.5 rounded-lg bg-zinc-900 text-[11px] text-zinc-300 border border-zinc-800 text-center font-medium">CI/CD Automation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 border-t border-zinc-900 bg-[#09090b]" id="sobre-mi">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<!-- Title -->
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Sobre Mí</h2>
+<!-- Narrative Paragraph -->
+<p class="text-sm md:text-base text-zinc-300 leading-relaxed mb-12 max-w-3xl mx-auto font-normal">
+        Soy un Ingeniero de Software apasionado por construir aplicaciones digitales sólidas, intuitivas y confiables. Conecto la lógica de sistemas de alto desempeño con experiencias de usuario refinadas y meticulosamente cuidadas en cada interacción.
+      </p>
+<!-- Approach Subtitle -->
+<h3 class="text-lg font-semibold text-zinc-200 mb-6 tracking-wide">Mi Enfoque</h3>
+<!-- 3 Methodological Steps Pills -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 text-left">
+<!-- Step 1 -->
+<div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#121215] border border-zinc-800/80">
+<span class="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-700/60 flex items-center justify-center font-mono text-xs font-bold text-white shrink-0">
+            01
+          </span>
+<span class="text-xs font-medium text-zinc-300">Análisis y Arquitectura Limpia</span>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#121215] border border-zinc-800/80">
+<span class="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-700/60 flex items-center justify-center font-mono text-xs font-bold text-white shrink-0">
+            02
+          </span>
+<span class="text-xs font-medium text-zinc-300">Desarrollo Ágil, Testeable y Modular</span>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#121215] border border-zinc-800/80">
+<span class="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-700/60 flex items-center justify-center font-mono text-xs font-bold text-white shrink-0">
+            03
+          </span>
+<span class="text-xs font-medium text-zinc-300">Despliegue Continuo y Escalabilidad</span>
+</div>
+</div>
+<!-- Key Metrics Counters (3 columns based on reference) -->
+<div class="grid grid-cols-3 gap-6 pt-6 border-t border-zinc-900">
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono">05+</div>
+<p class="text-[11px] sm:text-xs text-zinc-400 mt-1 uppercase tracking-wider font-medium">Años de Experiencia</p>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono">35+</div>
+<p class="text-[11px] sm:text-xs text-zinc-400 mt-1 uppercase tracking-wider font-medium">Proyectos Realizados</p>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono">20+</div>
+<p class="text-[11px] sm:text-xs text-zinc-400 mt-1 uppercase tracking-wider font-medium">Clientes Globales</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: SkillsSection -->
+<section class="py-24 border-t border-zinc-900 bg-[#09090b]" id="habilidades">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-xl mx-auto mb-16">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2">Habilidades Técnicas</h2>
+<p class="text-xs md:text-sm text-zinc-400">Crafting robust backend systems &amp; frictionless user interfaces</p>
+</div>
+<!-- Skills 4-Column Layout as in reference image -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: Frontend Tech -->
+<div class="bg-[#121215] border border-zinc-800/90 rounded-2xl p-6">
+<h3 class="text-sm font-semibold text-zinc-200 mb-4 pb-2 border-b border-zinc-800/60">Frontend Tech</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">React</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Next.js</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">TypeScript</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Tailwind CSS</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Vue.js</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Redux Toolkit</span>
+</div>
+</div>
+<!-- Category 2: Backend & APIs -->
+<div class="bg-[#121215] border border-zinc-800/90 rounded-2xl p-6">
+<h3 class="text-sm font-semibold text-zinc-200 mb-4 pb-2 border-b border-zinc-800/60">Backend &amp; APIs</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Node.js</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Express</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">NestJS</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Python</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">GraphQL</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">REST API</span>
+</div>
+</div>
+<!-- Category 3: Databases & Cloud -->
+<div class="bg-[#121215] border border-zinc-800/90 rounded-2xl p-6">
+<h3 class="text-sm font-semibold text-zinc-200 mb-4 pb-2 border-b border-zinc-800/60">Databases &amp; Cloud</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">PostgreSQL</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">MongoDB</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Redis</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">AWS (S3/EC2)</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Docker</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Supabase</span>
+</div>
+</div>
+<!-- Category 4: Tools & Interaction -->
+<div class="bg-[#121215] border border-zinc-800/90 rounded-2xl p-6">
+<h3 class="text-sm font-semibold text-zinc-200 mb-4 pb-2 border-b border-zinc-800/60">Tools &amp; Interaction</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Git / GitHub</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">CI/CD Actions</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Jest / Vitest</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Figma</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">GSAP</span>
+<span class="px-3 py-1.5 rounded-lg bg-zinc-900 text-xs text-zinc-300 border border-zinc-800 font-mono">Linux</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SkillsSection -->
+<!-- BEGIN: ProjectsSection -->
+<section class="py-24 border-t border-zinc-900 bg-[#09090b]" id="proyectos">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<!-- Section Title & Intro -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2">Proyectos Destacados</h2>
+<p class="text-sm text-zinc-400">Una selección de sistemas completos, productos SaaS y plataformas de alta escala.</p>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-zinc-300 hover:text-white transition-colors group" href="https://github.com" rel="noopener noreferrer" target="_blank">
+          Ver repositorio completo en GitHub <i class="fa-solid fa-arrow-right ml-2 text-[10px] group-hover:translate-x-1 transition-transform"></i>
+</a>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<article class="bg-[#121215] border border-zinc-800/90 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-zinc-700 transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-xs font-mono text-zinc-500 uppercase">SaaS Platform</span>
+<div class="flex gap-3 text-zinc-400">
+<a aria-label="Github code" class="hover:text-white transition-colors" href="#"><i class="fa-brands fa-github text-sm"></i></a>
+<a aria-label="Live preview" class="hover:text-white transition-colors" href="#"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+</div>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-zinc-200 transition-colors">CloudMetrics Analytics</h3>
+<p class="text-sm text-zinc-400 leading-relaxed mb-6">
+              Plataforma de telemetría y análisis de logs en tiempo real para clústeres de servidores. Procesa más de 2M de eventos diarios mediante colas en Redis y visualización fluida con Canvas/D3.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4 border-t border-zinc-800/60 font-mono text-[11px] text-zinc-400">
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Next.js 14</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">TypeScript</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Go</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">PostgreSQL</span>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="bg-[#121215] border border-zinc-800/90 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-zinc-700 transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-xs font-mono text-zinc-500 uppercase">Fintech &amp; Payments</span>
+<div class="flex gap-3 text-zinc-400">
+<a aria-label="Github code" class="hover:text-white transition-colors" href="#"><i class="fa-brands fa-github text-sm"></i></a>
+<a aria-label="Live preview" class="hover:text-white transition-colors" href="#"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+</div>
+</div>
+<h3 class="text-xl font-bold text-white mb-3 group-hover:text-zinc-200 transition-colors">Aura Pay Engine</h3>
+<p class="text-sm text-zinc-400 leading-relaxed mb-6">
+              Motor de facturación automatizada y suscripciones recurrentes con reconciliación de pasarelas de pago Stripe y PayPal, auditoría criptográfica y panel de control web responsivo.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4 border-t border-zinc-800/60 font-mono text-[11px] text-zinc-400">
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Node.js</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Express</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Stripe API</span>
+<span class="bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">Docker</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: ContactSection -->
+<section class="py-24 border-t border-zinc-900 bg-[#09090b]" id="contacto">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<div class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 mx-auto flex items-center justify-center text-zinc-300 mb-6">
+<i class="fa-regular fa-paper-plane text-base"></i>
+</div>
+<h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4">¿Tienes una idea o proyecto?</h2>
+<p class="text-sm md:text-base text-zinc-400 leading-relaxed max-w-xl mx-auto mb-10">
+        Actualmente disponible para consultoría de software, roles senior o proyectos full-stack desafiantes. Hablemos sobre cómo puedo aportar valor a tu equipo.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full text-xs font-semibold text-zinc-950 bg-white hover:bg-zinc-200 transition-colors shadow-lg" href="mailto:alex@rivera.dev">
+          Enviar Correo Directo
+        </a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full text-xs font-semibold text-zinc-300 bg-zinc-900 border border-zinc-800 hover:border-zinc-600 hover:text-white transition-all" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+          Conectar en LinkedIn
+        </a>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+<!-- BEGIN: MainFooter -->
+<footer class="py-12 border-t border-zinc-900 bg-[#070709] text-zinc-500 text-xs">
+<div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Monogram & Copy -->
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center font-mono text-[10px] font-bold text-zinc-400">
+          ar
+        </div>
+<p class="">© <span id="current-year" class="">2026</span> Alex Rivera. Todos los derechos reservados.</p>
+</div>
+<!-- Links -->
+<div class="flex items-center gap-6">
+<a class="hover:text-zinc-300 transition-colors" href="#hero">Volver Arriba</a>
+<a class="hover:text-zinc-300 transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="hover:text-zinc-300 transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="current-year-updater">
+    // Update copyright year automatically
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div></body></html>
